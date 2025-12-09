@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{C87A2EF5-70D3-489C-9EFC-F6137B15AD3B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>quizVinipi</RootNamespace>
+    <AssemblyName>quizVinipi</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastro.cs" />
+    <Compile Include="Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DadosGlobais.cs" />
+    <Compile Include="Inicio.cs" />
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntroQuiz29.cs" />
+    <Compile Include="IntroQuiz29.Designer.cs">
+      <DependentUpon>IntroQuiz29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quiz1.cs" />
+    <Compile Include="Quiz1.Designer.cs">
+      <DependentUpon>Quiz1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz29.cs" />
+    <Compile Include="Quiz29.Designer.cs">
+      <DependentUpon>Quiz29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz29Pt2.cs" />
+    <Compile Include="Quiz29Pt2.Designer.cs">
+      <DependentUpon>Quiz29Pt2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizIntroducao.cs" />
+    <Compile Include="QuizIntroducao.Designer.cs">
+      <DependentUpon>QuizIntroducao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuizzesAnteriores.cs" />
+    <Compile Include="QuizzesAnteriores.Designer.cs">
+      <DependentUpon>QuizzesAnteriores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ranking.cs" />
+    <Compile Include="Ranking.Designer.cs">
+      <DependentUpon>Ranking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultadosQuiz1.cs" />
+    <Compile Include="ResultadosQuiz1.Designer.cs">
+      <DependentUpon>ResultadosQuiz1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs" />
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaAcerto.cs" />
+    <Compile Include="TelaAcerto.Designer.cs">
+      <DependentUpon>TelaAcerto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaAvatar.cs" />
+    <Compile Include="TelaAvatar.Designer.cs">
+      <DependentUpon>TelaAvatar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaErro.cs" />
+    <Compile Include="TelaErro.Designer.cs">
+      <DependentUpon>TelaErro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaPerfil.cs" />
+    <Compile Include="TelaPerfil.Designer.cs">
+      <DependentUpon>TelaPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaRanking.cs" />
+    <Compile Include="TelaRanking.Designer.cs">
+      <DependentUpon>TelaRanking.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroQuiz29.resx">
+      <DependentUpon>IntroQuiz29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz1.resx">
+      <DependentUpon>Quiz1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz29.resx">
+      <DependentUpon>Quiz29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz29Pt2.resx">
+      <DependentUpon>Quiz29Pt2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizIntroducao.resx">
+      <DependentUpon>QuizIntroducao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuizzesAnteriores.resx">
+      <DependentUpon>QuizzesAnteriores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultadosQuiz1.resx">
+      <DependentUpon>ResultadosQuiz1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaAcerto.resx">
+      <DependentUpon>TelaAcerto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaAvatar.resx">
+      <DependentUpon>TelaAvatar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaErro.resx">
+      <DependentUpon>TelaErro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaPerfil.resx">
+      <DependentUpon>TelaPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaRanking.resx">
+      <DependentUpon>TelaRanking.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Avatars" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Avatars\avatar1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Avatars\avatar2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Avatars\avatar3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Avatars\avatar4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Avatars\avatar5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Avatars\avatar6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Avatars\avatar7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Avatars\avatar8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Avatars\avatar9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
